@@ -74,13 +74,14 @@ img {
 .header {
 padding-top: 0;
 padding-bottom:0;
+border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    
 }
 
 .header-navigation {
@@ -106,8 +107,9 @@ padding-bottom:0;
 }
 
 .header-menu-list {
-    display: flex;
-    gap: 40px;
+    /* display: flex;
+    gap: 40px; */
+    display: none;
 }
 
 .header-menu-item {
@@ -125,8 +127,9 @@ padding-bottom:0;
 }
 
 .header-contact-list {
-    display: flex;
-    gap: 40px;
+    /* display: flex;
+    gap: 40px; */
+    display: none;
 }
 
 .header-contact-item {}
@@ -277,8 +280,7 @@ padding-bottom:0;
 }
 
 .team-title {
-    margin: 0 auto;
-    margin-bottom: 72px;
+    margin: 0 auto 72px;
 }
 
 .team-list {
@@ -286,7 +288,8 @@ padding-bottom:0;
     flex-wrap: wrap;
     /* gap: 24px; */
     gap: 72px;
-    padding: 0 12px; /* --- */
+    margin: 0 auto;
+    padding: 0 12px;
 }
 
 .team-list-item {
@@ -358,6 +361,9 @@ padding-bottom:0;
 
 .portfolio-title {
     margin-bottom: 72px;
+}
+
+.portfolio-item-image {
 }
 
 .portfolio-list {
@@ -808,6 +814,19 @@ padding-bottom:0;
     .features-item {
         width: calc((100% - 24px) / 2);
     }
+    .team-list {
+        padding: 0 92px;
+        gap: 64px 24px;
+    }
+    .team-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+    .portfolio-list {
+        gap: 72px 24px;
+    }
+    .portfolio-list-item {
+        width: calc((100% - 24px) / 2);
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -828,5 +847,42 @@ padding-bottom:0;
     }
     .hero-title {
         margin-bottom: 48px;
+    }
+    .features {
+        padding: 120px 0;
+    }
+    .features-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+    .features-icon-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .features-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .team {
+        padding: 120px 0;
+    }
+    .team-list {
+        padding: 0;
+    }
+    .team-list-item {
+        width: calc((100% - 3 * 24px) / 4);
+    }
+    .portfolio {
+        padding: 120px 0;
+    }
+    .portfolio-list-item {
+        width: calc((100% - 2 * 24px) / 3);
     }
 }
